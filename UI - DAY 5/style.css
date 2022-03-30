@@ -1,0 +1,171 @@
+.header{
+    background-color: #0ba0e9;
+    width: 100%;
+    height: 40px;
+}
+.contact{
+    color: white;
+    margin-left: 16%;
+    margin-top: -1.1%;
+}
+.cart
+{
+    color: white;
+    margin-left: 70%;
+    margin-top: -3%;
+}
+.log{
+    color: white;
+    margin-left: 79%;
+    margin-top: -3%;
+}
+.logo{
+    height: 110px;
+    margin-left: 12%;
+    
+}
+.title{
+    margin-left: 22%;
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+    margin-top: -6.5%;
+}
+.nav{
+    margin-top: -5%;
+}
+.bg{
+    margin-top: 4%;
+    width: 100%;
+    height: 500px;
+}
+.welcome{
+    color: #0988d1;
+    margin-top: -28%;
+    font-size: 40px;
+    margin-left: 15%;
+}
+.safe{
+    color: #0988d1;
+    margin-top: -2%;
+    font-size: 40px;
+    margin-left: 15%;
+}
+.btn{
+    color: white;
+    background-color: #168fd6;
+    margin-left: 15%;
+    padding-left: 47px;
+    width: 12%;
+}
+.footer{
+   background-color: #f3c114;
+    height: 360px;
+    margin-top: 16%;
+    
+}
+.head{
+    color: white;
+    font-size: xx-large;
+    font-weight: 200;
+    font-style: initial;
+    margin-left: 45%;
+    font-family: 'Righteous', cursive;
+    width: 20vw;
+    margin-top: -25%;
+}
+.img1{
+    height: 150px;
+    margin-left: 15%;
+}
+.text{
+    color: white;
+    font-weight: 500;
+    font-size: larger;
+    font-family: 'Righteous', cursive;
+    margin-left: 13%;
+    margin-top: -1%;
+}
+.texts{
+    color: white;
+    font-size: small;
+    font-family: 'Righteous', cursive;
+    margin-left: 15%;
+    margin-top: -1%;
+}
+.img2{
+    height: 150px;
+    margin-left: 34%;
+    margin-top: -21.5%;
+}
+.text1{
+    color: white;
+    font-weight: 500;
+    font-size: larger;
+    font-family: 'Righteous', cursive;
+    margin-left: 35%;
+    margin-top: -6.5%;
+    
+}
+.texts1{
+    color: white;
+    font-size: small;
+    font-family: 'Righteous', cursive;
+    margin-left: 36.5%;
+    margin-top: -1%;
+}
+.img3{
+    height: 110px;
+    margin-left: 55%;
+    margin-top: -25.5%;
+}
+.text2{
+    color: white;
+    font-weight: 500;
+    font-size: larger;
+    font-family: 'Righteous', cursive;
+    margin-left: 53%;
+    margin-top: -7.5%;
+}
+.texts2{
+    color: white;
+    font-size: small;
+    font-family: 'Righteous', cursive;
+    margin-left: 55.5%;
+    margin-top: -1%;
+}
+.img4{
+    height: 70px;
+    margin-left: 80%;
+    margin-top: -26.5%;
+}
+.text3{
+    color: white;
+    font-weight: 500;
+    font-size: larger;
+    font-family: 'Righteous', cursive;
+    margin-left: 78%;
+    margin-top: -9%;
+}
+.texts3{
+    color: white;
+    font-size: small;
+    font-family: 'Righteous', cursive;
+    margin-left: 78.5%;
+    margin-top: -1%;
+}
+.care{
+    color: #04a0f2;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Righteous', cursive;
+    margin-top: 4%;
+    margin-left: 60%;
+}
+.care2{
+    color: #04a0f2;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Righteous', cursive;
+    margin-top: -2%;
+    margin-left: 56.5%;
+}

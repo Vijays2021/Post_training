@@ -1,0 +1,292 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Dosis', sans-serif;
+    }
+    body{
+    background: url(../images/bg-form.jpg);
+    background-size:100%;
+    
+    }
+    h2{
+    color:#ffffff;
+    margin-right:40px;
+    text-align:center;
+    font-size:35px;
+    letter-spacing: 5px;
+    font-family: 'Dosis', sans-serif;
+    }
+    .register{  
+        margin-top: 1%;
+      margin-left:5%;
+    background-color:rgba(0, 128, 128, 0.6);
+    width:90%;
+    font-size:18px;
+    border:1px solid #ffffff;
+    box-shadow:2px 2px 15px rgba(0,0,0,0.3);
+    color:#f9fbfb;
+    font-family: 'Dosis', sans-serif;
+    
+    }
+    #register{
+    margin:40px;
+    }
+    label{
+    font-size:18px;
+    }
+    .name{
+    width:300px;
+    border:1px solid #ddd;
+    outline:0;
+    padding:7px;
+    background-color:rgba(0, 102, 102, 0.8);
+    margin-left: 3%;
+    }
+    .lname{
+        width:300px;
+        border:1px solid #ddd;
+        outline:0;
+        padding:7px;
+        background-color:rgba(0, 102, 102, 0.8);
+        margin-left: 3%;
+        position: relative;
+        top: -40px;
+        }
+    .email{
+        width:300px;
+        border:1px solid #ddd;
+        outline:0;
+        padding:7px;
+        background-color:rgba(0, 102, 102, 0.8);
+        margin-left: 1%;
+    }
+    
+    label,span,h2{
+       text-shadow:1px 1px 5px rgpa(0,0,0,0.3);
+    }
+    input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder {
+      color:white;
+    }
+    .fn{
+        
+       margin-left: 4%;
+        top:-37px;
+        line-height:40px;
+        width:532px;
+        padding:0 22px;
+        font-size:16px;
+        color:white;
+    }
+    .phone{
+        margin-left: 4%;
+        top:-37px;
+        line-height:40px;
+        width:532px;
+        padding:0 22px;
+        font-size:16px;
+        color:white;
+    }
+    .code{
+        top:-47px;
+        line-height:40px;
+        width:95px;
+        padding:0 22px;
+        font-size:16px;
+        color:white;
+        background-color:rgba(0, 102, 102, 0.8);
+        border:1px solid #ddd;
+        margin-left: 1%;
+        margin-top: 3%;
+    }
+    .number{
+        top:-37px;
+        line-height:40px;
+        width:126px;
+        padding:0 22px;
+        font-size:16px;
+        color:white;
+        background-color:rgba(0, 102, 102, 0.8);
+        border:1px solid #ddd;
+        margin-left: 0.5%;
+    }
+    .bill{
+        margin-left: 4%;
+        top:-37px;
+        line-height:40px;
+        width:532px;
+        padding:0 22px;
+        font-size:16px;
+        color:white;
+    }
+    .your{
+        margin-left: 4%;
+        top:-37px;
+        line-height:40px;
+        width:532px;
+        padding:0 22px;
+        font-size:16px;
+        color:white;
+    }
+    .city{
+        margin-left: 4%;
+        top:-37px;
+        line-height:40px;
+        width:532px;
+        padding:0 22px;
+        font-size:16px;
+        color:white;
+    }
+    .cityname{
+        width:300px;
+    border:1px solid #ddd;
+    outline:0;
+    padding:7px;
+    background-color:rgba(0, 102, 102, 0.8);
+    margin-left: 6.7%;
+    margin-top: 3%;
+    }
+    .ln{
+        line-height:40px;
+        width:532px;
+        font-size:16px;
+        color:white;
+        margin-left: 50%;
+        position: relative;
+        top: -40px;
+        
+    }
+    .state{
+        top:-37px;
+        line-height:40px;
+        width:532px;
+        font-size:16px;
+        color:white;
+        margin-left: 49%;
+        position: relative;
+        top: -40px;
+    }
+    .statename{
+        width:300px;
+    border:1px solid #ddd;
+    outline:0;
+    padding:7px;
+    background-color:rgba(0, 102, 102, 0.8);
+    position: relative;
+    top: -40px;
+    margin-left: 1%;
+    }
+    .zip{
+        margin-left: 4%;
+        top:-37px;
+        line-height:40px;
+        width:532px;
+        padding:0 22px;
+        font-size:16px;
+        color:white;
+    }
+    .zipcode{
+        width:300px;
+        border:1px solid #ddd;
+        outline:0;
+        padding:7px;
+        background-color:rgba(0, 102, 102, 0.8);
+        margin-left: 4.3%;
+    }
+
+    .countryname{
+        top:-37px;
+        line-height:40px;
+        width:532px;
+        font-size:16px;
+        color:white;
+        margin-left: 49%;
+        position: relative;
+        top: -40px;
+    }
+
+    .country{
+        top:-37px;
+        line-height:30px;
+        color:white;
+        background-color:rgba(0, 102, 102, 0.8);
+        border:1px solid #ddd;
+        margin-left: 5%;
+        position: relative;
+        top: -40px;
+
+    }
+    .add{
+        width:800px;
+        height:40px;
+    border:1px solid #ddd;
+    outline:0;
+    padding:7px;
+    background-color:rgba(0, 102, 102, 0.8);
+    border:1px solid #ddd;
+    margin-left: 0.5%;
+    margin-top: 3%;
+    }
+    .add1{
+        width:800px;
+        height:40px;
+    border:1px solid #ddd;
+    outline:0;
+    padding:7px;
+    background-color:rgba(0, 102, 102, 0.8);
+    border:1px solid #ddd;
+    margin-left: 1.5%;
+    margin-top: 3%;
+    }
+    .submit{
+        width:200px;
+    padding:7px;
+    font-size:18px;
+    font-weight:600;
+    background-color: dodgerblue;
+    color:#fff;
+    border:none;
+    box-shadow:1px 1px 5px
+    rgpa(0,0,0,0.3);
+    margin-bottom:20px;
+    margin-left:17%;
+    }
+    .submit1{
+        width:200px;
+        padding:7px;
+        font-size:18px;
+        font-weight:600;
+        background-color: orange;
+        color:#fff;
+        border:none;
+        box-shadow:1px 1px 5px
+        rgpa(0,0,0,0.3);
+        margin-bottom:20px;
+        margin-left:4%;
+        }
+
+        .error{
+            position: absolute;
+            margin-left: 16%;
+            color: red;
+    visibility: visible;    
+    font-weight: bolder;
+    text-shadow: 1px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+
+        }
+
+        .error1{
+            position: absolute;
+            margin-left: 51%;
+            margin-top: -3%;
+            color: red;
+    visibility: visible;    
+    font-weight: bolder;
+    text-shadow: 1px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+
+        }
+
+       /* .form-group span{
+            font-size: x-small;
+        } */
+        

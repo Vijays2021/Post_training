@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'> 
+<title>Login Form</title> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+				<div class="main-login main-center" style="margin-top:30px;">
+					<form class="form-horizontal" name="myForm" method="post" onsubmit="return validate_onSubmit()" action="#">
+						<p style="color: white;">Signup once and watch you any of your free demos.</p>
+						<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">Your Name</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon iconbk"><i class="fa fa-user fa" style="color: #1e96d2;" aria-hidden="true" style="color: #1e96d2;"></i></span>
+									<input type="text" class="form-control" autocomplete="off" oninput="validate_name()" name="name" id="name"  placeholder="Enter your Name here"/>
+									
+								</div>
+							</div>
+							<div class="error" id="nameErr"></div>
+						</div>
+
+						<div class="form-group">
+							<label for="email" class="cols-sm-2 control-label">Your Email</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon iconbk"><i class="fa fa-envelope fa" aria-hidden="true" style="color: #1e96d2;"></i></span>
+									<input type="text" class="form-control" autocomplete="off" oninput="validate_email()" name="email" id="email"  placeholder="Enter your Email here"/>
+								</div>
+							</div>
+							<div class="error" id="emailErr"></div>
+						</div>
+
+						<div class="form-group">
+							<label for="username" class="cols-sm-2 control-label">Username</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon iconbk"><i class="fa fa-users fa" style="color: #1e96d2;" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" autocomplete="off" oninput="validate_username()" name="username" id="username"  placeholder="Desired Username"/>
+								</div>
+							</div>
+							<div class="error" id="usernameErr"></div>
+						</div>
+
+						<div class="form-group">
+							<label for="password" class="cols-sm-2 control-label">Password</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon iconbk"><i class="fa fa-lock fa-lg " style="color: #1e96d2;" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" autocomplete="off" oninput="validate_password()" name="password" id="password"  placeholder="Password: Must be 8 char long"/>
+								</div>
+							</div>
+							<div class="error" id="passwordErr"></div>
+						</div>
+
+						<div class="form-group">
+							<label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon iconbk"><i class="fa fa-lock fa-lg" style="color: #1e96d2;" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" autocomplete="off" oninput="validate_cpassword()" name="cpassword" id="cpassword"  placeholder="Confirm Password"/>
+								</div>
+							</div>
+							<div class="error" id="cpasswordErr"></div>
+						</div>
+
+						<div class="form-group ">
+							<button type="submit" class="btn btn-light btn-lg btn-block login-button" style="background-color: #f0f0f0; margin-top: 15px; margin-left: 4%; width: 335px; color: #797979; height: 40px; text-align: center; ">Register</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="onsubmit3.js"></script>
+		<script src="validation3.js"></script>
+	</body>
+</html>

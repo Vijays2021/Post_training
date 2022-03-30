@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Product Order</title>
+<link rel ="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h2>PRODUCT ORDER FORM</h2>
+<div class="register">
+
+<form id="register" method="post" action="" name="myForm" onsubmit="return validateForm()">
+    <div class="form-group">
+<label class="fn">FIRST NAME :</label>
+<input class="name" id="fname" type="text" name="fname" autocomplete="off"  placeholder="Your First Name" oninput="validate_fname()">
+<div class="error" id="nameErr"></div>
+</div>
+
+
+<div class="form-group">
+<label class="ln">LAST NAME :</label>
+<input class="lname" type="text" id="lname" name="lname" autocomplete="off"  placeholder="Your Last Name" oninput="validate_lname()">
+<div class="error1" id="lastnameErr"></div>
+</div>
+
+
+<div class="form-group">
+<label class="fn">EMAIL ADDRESS :</label>
+<input class="email" type="text" name="email" id="email" autocomplete="off" placeholder="mail@example.com" oninput="validate_email()">
+<div class="error" id="emailErr"></div>
+</div>
+
+
+<div class="form-group">
+<label class="phone">PHONE NUMBER :</label>
+<input class="code" type="number" id="code" name="code" autocomplete="off" placeholder="+??" min="10" max="9999">
+<input type="number" name="number" id="number" class="number" placeholder="???????????" oninput="validate_number()">
+<div class="error" id="numberErr"></div>
+</div>
+
+
+<div class="form-group">
+<label class="bill">BILLING ADDRESS :</label>
+<input type="text" name="billing" id="add" class="add" autocomplete="off" placeholder="Billing Address" oninput="validate_billing()">
+<div class="error" id="addErr"></div>
+</div>
+
+
+<div class="form-group">
+<label class="your">YOUR ADDRESS :</label>
+<input type="text" name="address" id="add1" class="add1" autocomplete="off" placeholder="Your Address" oninput="validate_address()">
+<div class="error" id="add1Err"></div>
+</div>
+
+
+<div class="form-group">
+<label class="city">CITY :</label>
+<input class="cityname" type="text" id="city" name="city" autocomplete="off"  placeholder="Your City" oninput="validate_city()">
+<div class="error" id="cityErr"></div>
+</div>
+
+
+<div class="form-group">
+<label class="state">STATE/PROVINCE :</label>
+<input class="statename" type="text" id="state" name="state" autocomplete="off"  placeholder="Your State or Province" oninput="validate_state()">
+<div class="error1" id="stateErr"></div>
+</div>
+
+
+
+<div class="form-group">
+<label class="zip">ZIP CODE :</label>
+<input class="zipcode" type="text" id="zip" name="zipcode" autocomplete="off"  placeholder="ZIP Code" oninput="validate_zipcode()">
+<div class="error" id="zipErr"></div>
+</div>
+
+
+<div class="form-group">
+<label class="countryname">COUNTRY :</label>
+<select class="country" name="country" id="country" style="width:322px;height:40px" onblur="validate_country()">
+    <option value="country" style="color:white" disabled selected hidden>Country</option>
+  <option value="india">INDIA</option>
+  <option value="usa">USA</option>
+  <option value="africa">JAPAN</option>
+  <option value="england">ENGLAND</option>
+</select>
+<div class="error1" id="countryErr"></div>
+</div>
+
+
+
+<input type="submit" value="PLACE ORDER" class="submit" id="submit">
+<input type="reset" value="RESET" class="submit1">
+
+</form>
+</div>
+<script src="js/vj-validation.js" ></script>
+<script src="js/onblur_validation.js"></script>
+
+</body>
+
+</html>

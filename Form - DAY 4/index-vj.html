@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script
+        src="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Poppins:wght@400;500;600&display=swap"></script>
+    <link rel="stylesheet" type="text/css" href="css/style-vj.css" />
+
+</head>
+
+<body onload="createCaptcha()">
+    <button style="width: 35%;margin-left:30vw;border: none; color: white; background-color: #145bb5">
+        <b>
+            <h3>Welcome To Registration</h3>
+        </b>
+    </button>
+
+    <div class="bdr1">
+        <div class="error" role="alert" id="formErr"></div>
+        <div id="checkboxerror"></div>
+        <div id="gendererror"></div>
+
+        <div class="main-login" style="margin-top:2%">
+            <form class="form-horizontal" method="post" action="#" name="myForm" onsubmit="validate_onSubmit()">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group" style="width: 17vw;  margin-left: -11vw;">
+                            <span class="input-group-addon iconbk"><i class="fa fa-user fa"
+                                    aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" autocomplete="off" onblur="validate_fname()"
+                                name="firstname" id="firstname" placeholder="First Name" />
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="input-group" style="width: 17vw;  margin-left: -3.5vw;">
+                            <span class="input-group-addon iconbk"><i class="fa fa-user fa"
+                                    aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" autocomplete="off" onblur="validate_lname()"
+                                name="lastname" id="lastname" placeholder="Last Name" />
+                        </div>
+                    </div>
+                    <div class="error" id="nameErr"></div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group" style="width: 35vw;  margin-left: -11vw;">
+                            <span class="input-group-addon iconbk"><i class="fa fa-user fa"
+                                    aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" autocomplete="off" onblur="validate_mname()"
+                                name="mothername" id="mothername" placeholder="Mother Full Name" />
+                        </div>
+                    </div>
+                    <div class="error" id="mnameErr"></div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group" style="width: 35vw;  margin-left: -11vw;">
+                            <span class="input-group-addon iconbk"><i class="fa fa-calendar fa"
+                                    aria-hidden="true"></i></span>
+                            <input type="date" class="form-control" autocomplete="off" onblur="validate_date()"
+                                name="date" id="date" placeholder="Date" />
+                        </div>
+                    </div>
+                    <div class="error" id="dateErr"></div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group" style="width: 35vw;  margin-left: -11vw;">
+                            <span class="input-group-addon iconbk"><i class="fa fa-flag fa"
+                                    aria-hidden="true"></i></span>
+                            <select class="form-control" onblur="validate_country()" id="country" name="country"
+                                placeholder="Select Nationality(citizenship)">
+                                <option value="country" selected hidden>Select Nationality (Citizenship)</option>
+                                <option>INDIA</option>
+                                <option>USA</option>
+                                <option>UK</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="error" id="countryErr"></div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="input-group" style=" margin-left: -10vw; color: #eeeeee;">
+                            <input type="radio" name="gender" id="male" placeholder="Male" checked>&nbsp;
+                            <span> Male </span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="input-group" style=" margin-left: -8vw; color: #eeeeee;">
+                            <input type="radio" name="gender" id="female" placeholder="Female"
+                                style="color: #eeeeee;">&nbsp;
+                            <span> Female </span>
+                        </div>
+                    </div>
+                    <div class="error" id="genderErr"></div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group" style="width: 35vw;  margin-left: -11vw;">
+                            <span class="input-group-addon iconbk"><i class="fa fa-envelope fa"
+                                    aria-hidden="true"></i></span>
+                            <input type="email" class="form-control" autocomplete="off" onblur="validate_email()"
+                                name="email" id="email" placeholder="Email Address" />
+                        </div>
+                    </div>
+                    <div class="error" id="emailErr"></div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group" style="width: 35vw;  margin-left: -11vw;">
+                            <span class="input-group-addon iconbk"><i class="fa fa-lock fa"
+                                    aria-hidden="true"></i></span>
+                            <input type="password" class="form-control" autocomplete="off" onblur="validate_password()"
+                                name="password" id="password" placeholder="Password" />
+                        </div>
+                    </div>
+                    <div class="error" id="passwordErr"></div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group" style="width: 35vw;  margin-left: -11vw;">
+                            <span class="input-group-addon iconbk"><i class="fa fa-lock fa"
+                                    aria-hidden="true"></i></span>
+                            <input type="password" class="form-control" autocomplete="off"
+                                onblur="validate_confirmpassword()" name="confirmpassword" id="confirmpassword"
+                                placeholder="Confirm Password" />
+                        </div>
+                    </div>
+                    <div class="error" id="confirmpasswordErr"></div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group" style="width: 35vw;  margin-left: -11vw;">
+                            <span class="input-group-addon iconbk"><i class="fa fa-mobile fa"
+                                    aria-hidden="true"></i></span>
+                            <input type="phone" class="form-control" autocomplete="off" onblur="validate_number()"
+                                name="number" id="number" placeholder="Mobile Number" />
+                        </div>
+                    </div>
+                    <div class="error" id="numberErr"></div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group" style="width: 17vw;  margin-left: -11vw;">
+                            <span class="input-group-addon iconbk"><i class="fa fa-refresh fa" style="cursor: pointer;"
+                                    onclick="createCaptcha()" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" autocomplete="off" name="cpatchaTextBox"
+                                id="cpatchaTextBox" placeholder="Enter Captcha" />
+
+                            <div id="captcha"
+                                style="position: absolute; left: 110%; background-color: #eeeeee; width: 9vw; height: 7vh; padding-left: 4%; text-align: center;">
+                            </div>
+
+                        </div>
+                        <div class="error" id="captchaErr"></div>
+                    </div>
+                    <br /><br>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="input-group" style="width: 35vw;  margin-left: -21.5vw;">
+                                <input type="checkbox" id="checkbox" name="checkbox" value="check1"
+                                    style="margin-top: 5%; ">&nbsp;
+                                <label for="check1" style="color: #eeeeee; font-size:smaller;">I accept the terms and
+                                    conditions</label>
+                            </div>
+                        </div>
+                        <div class="error" id="checkboxErr"></div>
+                    </div>
+                    <br />
+
+                    <button type="submit" style="background-color: yellowgreen; width: 14vw;
+                    height: 5vh;
+                    color: white;
+                    border: none;
+                    box-shadow: 3px 3px 3px 3px yellowgreen;
+                 ">Create Account</button>
+
+                    <br />
+
+            </form>
+        </div>
+        <script src="js/onsubmit.js"></script>
+        <script src="js/validation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+.body-bg {
+    height: 88vh;
+    width: 90vw;
+    margin-top: 4%;
+    margin-left: 5%;
+    box-shadow: 15px 15px 15px 15px #00000026;
+    background: linear-gradient(to right, #FFC300 0%, #FFC300 20%, white 20%, white 100%);
+}
+
+.nav {
+    margin-left: 30%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin-top: -3%;
+    font-weight: bolder;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.nav-link {
+    color: black;
+}
+
+.fashion {
+    background-color: darkgray;
+    width: 7%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: larger;
+    margin-top: -33%;
+    margin-left: 42%;
+    text-align: center;
+    justify-content: center;
+}
+
+.head {
+    margin-top: -1%;
+    margin-left: 42%;
+    font-size: 270%;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.para {
+    margin-top: -2%;
+    margin-left: 42%;
+    color: darkgray;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.read {
+    margin-left: 42%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: 750;
+}
+
+.news {
+    margin-top: 4%;
+    margin-left: 42%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: 750;
+}
+
+.search {
+    margin-left: 42%;
+    height: 10%;
+    box-shadow: 7px 7px 7px 7px #00000026;
+    border: none;
+    width: 20%;
+    padding-left: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkgray;
+}
+
+.sub {
+    height: 10%;
+    box-shadow: 7px 7px 7px 7px #00000026;
+    border: none;
+    width: 10%;
+    padding-left: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFC300;
+    margin-left: -0.5%;
+    margin-top: -12%;
+}
+
+
+html {
+    background-color: #FFC300;
+}
+
+.nav a::after {
+    content: '';
+    width: 0;
+    height: 5px;
+    background: #FFC300;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+
+
+.textbox {
+    width: 120px;
+    height: 30px;
+    margin-left: 3px;
+    border: 1px solid #FFC300;
+    outline: none;
+    display: none;
+}
+
+.btn-search {
+    width: 60px;
+    height: 30px;
+    margin-left: -1%;
+    background: #FFC300;
+    color: black;
+    border: 1px solid #FFC300;
+    cursor: pointer;
+    display: none;
+}

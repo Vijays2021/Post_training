@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank card validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+
+        <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6">
+
+                <div id="text1">
+                    <form action="connection.php" method="post"> 
+                        <label style="color: white;  position: absolute; top: 15%; left: 29%;">CARD NUMBER</label>
+                        <input type="text" oninput="validate_cardnumber()" name="cardnumber" id="cardnumber" placeholder="XXXX - XXXX - XXXX- 4335"
+                            style="margin-top:12%; margin-left: 8%; height: 32px; width: 210px; ">
+                            <div class="error" id="cardnumberErr"></div> 
+
+                        <label style="color: white; position: absolute; top: 33%; left: 29%;">EXP. DATE</label>
+                        <input type="text" name="exp-date" placeholder="Aug. 2017" oninput="date_validation()"
+                            id="exp-date" onfocus="(this.type='date')"
+                            style="position: absolute; top: 40%; left: 29%; height: 32px; width: 130px; ">
+                            <div class="error" id="expdateErr"></div> 
+
+                        <label style="color: white; position: absolute; top: 33%; left: 40%;">CVV</label>
+                        <input type="password" oninput="validate_cvv()" name="cvv" id="cvv" placeholder="007"
+                            style="position: absolute; top: 40%; left: 40%; height: 32px; width: 60px; ">
+                        <div class="error" id="cvvErr"></div>
+
+                        <label style="color: white; position: absolute; top: 15%; left: 49%;">CARD VENDOR</label>
+                        <div class="container-card" style="margin-top: -7%; margin-left: 52.5%; background-color: #434d88; padding-left: 2%;
+                    border: none;
+                    border-radius: 2px 2px 2px 2px; width: 200px; height: 42px;">
+
+                            <a><img src="card-img4.jpg" alt="card-master" width="40" height="40"></a>
+                            <a><img src="card-img3.png" alt="card-discover" width="40" height="40"></a>
+                            <a><img src="card-img1.png" alt="card-american" width="40" height="40"></a>
+                            <a><img src="card-img2.png" alt="card-visa" width="40" height="40"></a>
+                        </div>
+
+                        <label style="color: white; position: absolute; top: 33%; left: 49%;">CARDHOLDER NAME</label>
+                        <input type="text" oninput="validate_name()" name="name" id="name" placeholder="Johnny Sue Cash"
+                            style="position: absolute; top: 40%; left: 49%; height: 32px; width: 210px;">
+                        <div class="error" id="nameErr"></div>
+
+                    </form>
+                </div>
+                <div id="text2">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            style="position: absolute; top: 58%; left: 27.5%; ">
+                    </div>
+                    <label style="text-align: center; position: absolute; top: 58%; left: 30%;">
+                        I hereby certify that I have read and understand the information provided to me in</label>
+                    <label style="text-align: center; position: absolute; top: 61.5%; left: 28%; width: 40%; ">
+                        the<a href="" style="text-decoration: none; color: #434d88;">Terms of Service</a>regarding the
+                        companies standard operating procedures.
+                    </label>
+                    <div class="error" id="checkboxErr"></div>
+
+                    <button onclick="validate_onSubmit()" name="submit"
+                        style="margin-top: 20%; margin-left: 70%; color: white; background-color: #49bb1e; border: none; height: 40px; width: 130px; border-radius: 5px; box-shadow: 0px 0px 15px 0px #49bb1e;">PLACE
+                        ORDER</button>
+
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="onsubmit5.js"></script>
+    <script src="vj-validation5.js"></script>
+
+    <!-- <script> 
+    $("input[type=date]").datepicker({ dateFormat: 'yy-mm-dd', onSelect: function(dateText, inst) 
+    { $(inst).val(dateText); // Write the value in the input
+     } }); 
+    // Code below to avoid the classic date-picker 
+    $("input[type=date]").on('click', function() { return false; }); 
+    </script> -->
+</body>
+
+</html>
